@@ -1,0 +1,19 @@
+{
+  "name": "fontawesome-scss",
+  "version": "1.0.1",
+  "description": "Fontawesome mixin for SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reskwer/fontAwesome-SCSS.git"
+  },
+  "author": "reskwer <reskwer@ya.ru> (http://reskwer.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reskwer/fontAwesome-SCSS/issues"
+  },
+  "homepage": "https://github.com/reskwer/fontAwesome-SCSS#readme"
+}
