@@ -1,35 +1,41 @@
 # fontAwesome-SCSS
 [![GitHub version](https://badge.fury.io/gh/reskwer%2FfontAwesome-SCSS.svg)](https://badge.fury.io/gh/reskwer%2FfontAwesome-SCSS) [![npm version](https://badge.fury.io/js/fontawesome-scss.svg)](https://badge.fury.io/js/fontawesome-scss)
+
+### Почему fontAwesome-SCSS ?
+1. Не подключаете шрифты. экономия `http` запроса.
+2. Не выгружаете `150 kb` ради 1 иконки.
+3. Все иконки в `SGV`
+4. Не теряет качество при отключеном сглаживание шрифтов.
+5. Не кривыит иконки если по каким-то причинам файл шрифтов не выгрузился или выгрузился с ошибками.
+6. Все иконки из версии `4.7`
+
 ## Install
-1. Скачайте миксин.
-2. С папки "fonts" скопируйте шрифты в папку вашего проекта.
-3. Подключите fontAwesome.scss , `@import "fontAwesome.scss";`
-4. В файле `fontAwesome.scss`, переменной `$folderFonts` задайте путь к папке со шрифтами fontAwesome. ВНИМАНИЕ: путь нужно задавать так - как в css, не с корня сайта, а с к корня папки css.
+Скачайте архив и подлючите файл `fontAwesome.scss` в ваш проект.    
 
-Пример
+### Синтаксис
+```scss 
+@include fa($имя-иконки, цвет, размер)
+```
+**Имя** - Имена иконок указываются и приставкой `$`, пример: `$fa-user`.    
+**Цвет** - любое значение поддерживаемое `css`, hex, rgba, css переменные.   
+**Размер** - любое значение поддерживаемое `css`    
+*Любое значение можно пропустить*
+### Пример
 ```scss
-span {
-    @include fa($fa-user)
+//Простая иконка
+.icon-user{
+    @include fa($fa-user);
+}
+//Иконка красного цвета
+.icon-user{
+    @include fa($fa-user, red);
+}
+//Иконка красного цвета, 18px
+.icon-user{
+    @include fa($fa-user, red ,18px);
 }
 ```
-Так же доступны ключи для быстрой стилизации `:before или :after`, `font-size`, `color`, `margin`, `vertical-align` в качестве ключей можно использовать вседоступные CSS единицы
+[![GitHub version](https://github.com/reskwer/fontAwesome-SCSS/blob/master/intro.gif?raw=true)]
+## npm 
 
-Пример
-```scss
-span {
-    @include fa($fa-user, before, 18px, #ccc, 0 5px, middle)
-}
-```
-Данный код будет скомпилирован в:
-```css
-.span:after {
-    content: "";
-    display: inline-block;
-    font-size: 18px;
-    line-height: 1;
-    font-family: FontAwesome;
-    color: #ccc;
-}
-```
-
-Документация написана на быструю руку, со временем будет будет дополнятся.
+`npm i fontawesome-scss --save-dev`
