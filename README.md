@@ -44,3 +44,6 @@
 </snippet>
 ```
 
+## copyright
+fontawesome-scss - является совместной работой 
+[reskwer](https://github.com/reskwer) и [sokoliurii](https://github.com/sokoliurii)
