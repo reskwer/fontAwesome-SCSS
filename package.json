@@ -1,7 +1,7 @@
 {
   "name": "fontawesome-scss",
-  "version": "1.0.1",
-  "description": "Fontawesome mixin for SCSS",
+  "version": "2.0.2",
+  "description": "Font awesome mixin for SCSS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

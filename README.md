@@ -21,21 +21,26 @@
 **Размер** - любое значение поддерживаемое `css`    
 *Любое значение можно пропустить*
 ### Пример
+Иконка красного цвета, 18px
 ```scss
-//Простая иконка
-.icon-user{
-    @include fa($fa-user);
-}
-//Иконка красного цвета
-.icon-user{
-    @include fa($fa-user, red);
-}
-//Иконка красного цвета, 18px
 .icon-user{
     @include fa($fa-user, red ,18px);
 }
 ```
-[![GitHub version](https://github.com/reskwer/fontAwesome-SCSS/blob/master/intro.gif?raw=true)]
-## npm 
+[![GitHub version](https://github.com/reskwer/fontAwesome-SCSS/blob/master/intro.gif?raw=true)      
 
+## npm 
 `npm i fontawesome-scss --save-dev`
+
+## Sublime
+Для тех кто ценит свое время, sublime сниппет.
+```xml
+<snippet>
+	<content><![CDATA[
+@include fa (\$${1:name});
+]]></content>
+	<tabTrigger>fa</tabTrigger>
+	<scope>source.scss</scope>
+</snippet>
+```
+
