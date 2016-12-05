@@ -1,7 +1,7 @@
 # fontAwesome-SCSS
 [![GitHub version](https://badge.fury.io/gh/reskwer%2FfontAwesome-SCSS.svg)](https://badge.fury.io/gh/reskwer%2FfontAwesome-SCSS) [![npm version](https://badge.fury.io/js/fontawesome-scss.svg)](https://badge.fury.io/js/fontawesome-scss)
 
-### Почему fontAwesome-SCSS ?
+### fontAwesome-SCSS ?
 1. Не нужно подключать шрифты. Экономия `http` запроса.
 2. Не выгружаете `150 kb` ради 1 иконки.
 3. Все иконки `inline SGV` в CSS. Чистый html
@@ -10,7 +10,7 @@
 6. Все иконки из версии `4.7`
 
 ## Install
-Скачайте архив и подключите файл `fontAwesome.scss` в ваш проект.
+Закиньте `fontAwesome.scss` в ваш проект.
 
 ### Синтаксис
 ```scss
