@@ -10,7 +10,9 @@
 6. Все иконки из версии `4.7`
 
 ## Install
-Закиньте `fontAwesome.scss` в ваш проект.
+`npm i fontawesome-scss --save-dev`
+
+или просто закиньте `fontAwesome.scss` в ваш проект.
 
 ### Синтаксис
 ```scss
@@ -40,8 +42,6 @@ CSS на выходе
     background-image: url(data:image/svg+xml utf8, <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="6.5-37.5,271.5-112.5S1876,22,1876-84 S1838.5-280.5,1763.5-355.5z"/></svg>);
 }
 ```
-## npm 
-`npm i fontawesome-scss --save-dev`
 
 ## Sublime
 Для тех кто ценит свое время, sublime сниппет.
